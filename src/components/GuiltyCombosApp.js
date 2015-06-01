@@ -2,6 +2,7 @@
 
 var React = require('react/addons');
 var ReactTransitionGroup = React.addons.TransitionGroup;
+var Combo = require('./Combo');
 
 // CSS
 require('normalize.css');
@@ -14,7 +15,7 @@ var GuiltyCombosApp = React.createClass({
     return (
       <div className='main'>
         <ReactTransitionGroup transitionName="fade">
-          <img src={imageURL} />
+          <Combo name="Dust Loop" />
         </ReactTransitionGroup>
       </div>
     );
