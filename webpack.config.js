@@ -49,10 +49,10 @@ module.exports = {
       loader: 'react-hot!babel-loader'
     }, {
       test: /\.sass/,
-      loader: 'style-loader!css-loader!sass-loader?outputStyle=expanded&indentedSyntax'
+      loader: 'style-loader!css-loader!sass-loader?outputStyle=expanded&indentedSyntax!autoprefixer-loader?safe=true'
     }, {
       test: /\.css$/,
-      loader: 'style-loader!css-loader'
+      loader: 'style-loader!css-loader!autoprefixer-loader?safe=true'
     }, {
       test: /\.(png|jpg|woff|woff2)$/,
       loader: 'url-loader?limit=8192'
