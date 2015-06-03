@@ -1,0 +1,25 @@
+.Plus
+  background: blue
+  color: blue
+  width: 33px
+  height: 100px
+  position: relative
+  margin-left: 33px
+
+  &::selection
+    // color: blue
+    color: blue
+
+  &:before
+    // background: blue
+    background: blue
+    content: ""
+    width: 100px
+    height: 33px
+    position: absolute
+    top: 33px
+    left: -33px
+
+.plus-container
+  // display: inline-block
+  display: inline-block
