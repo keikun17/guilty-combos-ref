@@ -15,7 +15,7 @@ var GuiltyCombosApp = React.createClass({
     return (
       <div className='main'>
         <ReactTransitionGroup transitionName="fade">
-          <Combo name="Dust Loop" move_inputs={['p', 'k']} />
+          <Combo name="Dust Loop" move_inputs={['P', 'K', 'S', 'HS', '↓', '↘', '→']} />
         </ReactTransitionGroup>
       </div>
     );
