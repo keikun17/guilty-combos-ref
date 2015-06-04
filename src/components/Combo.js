@@ -4,7 +4,6 @@ var React = require('react/addons');
 var MoveInput = require('./MoveInput');
 var Plus = require('./Plus');
 
-
 //var Actions = require('actions/xxx')
 
 require('styles/Combo.sass');
@@ -17,9 +16,9 @@ var Combo = React.createClass({
         <p>{this.props.name}</p>
         <ul>
           {this.props.move_inputs.map(function(input){
-            return <div key={input.id}>
+            return <div className="component-group" key={input.id}>
               <MoveInput input={input} />
-              <Plus />
+              <Plus key={input.id} />
             </div>;
         })}
         </ul>
