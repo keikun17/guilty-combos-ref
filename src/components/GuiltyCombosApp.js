@@ -7,6 +7,7 @@ var Combo = require('./Combo');
 // CSS
 require('normalize.css');
 require('../styles/main.css');
+require('../styles/all.sass');
 
 var imageURL = require('../images/yeoman.png');
 
